@@ -7,14 +7,14 @@ dBconfig.loadDatabase();
 const core = require('../index.js');
 
 describe('mOSHostname', function() {
-    it('get mOSHostname', function(done) {
-        let data = {};
-        data['moduleFunction'] = "mOSHostname";
-        core.run(data).then(result => {
-            console.log(result);
-            done();
-        }).catch(error => {
-            done(error);
-        });
+  it('get mOSHostname', function(done) {
+    let data = {};
+    data['moduleFunction'] = "mOSHostname";
+    core.run(data).then(result => {
+      // console.log(result);
+      done();
+    }).catch(error => {
+      done(error);
     });
+  });
 });
